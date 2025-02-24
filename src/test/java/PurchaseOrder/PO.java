@@ -20,23 +20,7 @@ public class PO {
 		driver.findElement(By.id("user")).sendKeys("Openbravo");
 		driver.findElement(By.id("password")).sendKeys("12");
 		driver.findElement(By.id("buttonOK")).click();
-		/*
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
-		 * "//td[contains(text(),'Application')]")));
-		 * driver.findElement(By.xpath("//td[contains(text(),'Application')]")).click();
-		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
-		 * xpath("//tr//td//div[.='Procurement Management']")));
-		 * driver.findElement(By.xpath("//tr//td//div[.='Procurement Management']")).
-		 * click();
-		 * 
-		 * List<WebElement> listOfProcurementManagement =
-		 * driver.findElements(By.xpath("//table[@id='isc_53table']//tr"));
-		 * 
-		 * for (WebElement row : listOfProcurementManagement) { WebElement
-		 * transactionsElement =
-		 * row.findElement(By.xpath("//nobr[contains(text(),'Transactions')]"));
-		 * transactionsElement.click(); break; }
-		 */
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr//td//img[@name='isc_Bmain']")));
 		driver.findElement(By.xpath("//tr//td//img[@name='isc_Bmain']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr//td//input[@name='value']")));
