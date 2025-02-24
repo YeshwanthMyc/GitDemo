@@ -55,6 +55,7 @@ public class PO {
 		driver.findElement(By.xpath("//td[@class='OBToolbarIconButton_icon_newDoc OBToolbarIconButton']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table//tr//td//img[@name='isc_14Lmain']")));
 		driver.findElement(By.xpath("//table//tr//td//img[@name='isc_14Lmain']")).click();
+		driver.quit();
 
 	}
 }
