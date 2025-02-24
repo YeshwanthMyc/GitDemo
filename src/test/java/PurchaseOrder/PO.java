@@ -40,6 +40,7 @@ public class PO {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table//tr//td//img[@name='isc_14Lmain']")));
 		driver.findElement(By.xpath("//table//tr//td//img[@name='isc_14Lmain']")).click();
 		driver.quit();
+		driver.close();
 
 	}
 }
